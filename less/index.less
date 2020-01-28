@@ -52,8 +52,210 @@ table {
 * {
     box-sizing: border-box;
 }
+html{
+	font-size: 62.5%;
+}
+
+@psize: 1.6rem;
+@color: grey;
+
+.backgroundcolor{
+	color:white;
+	background:grey;
+	padding:1%;
+}
+.backgroundbox{
+	background:lightgrey;
+	font-size: 1.6rem;
+}
 
 html, body {
     height: 100%;
 }
 
+.container{
+	width: 90%;
+	margin: 3% auto;
+}
+
+.header{
+	
+	
+	img{
+		width: 30%;
+		@media (max-width: 500px){
+			width:100%;
+		}
+	}
+	 h1{
+		font-size: 8rem;
+		font-weight: bold;
+		font-family: 'Open Sans', sans-serif;
+  @media (max-width: 500px){
+	  font-size: 2.5rem;
+	  text-align: center;
+  }
+	}
+	
+}
+.firstpart{
+	padding: 5% 3%;
+	background: lightgrey;
+	width:100%;
+	margin: 2% 0;
+
+	h2 {
+		font-size: 2rem;
+		font-weight: bold;
+		margin-bottom: 2%;
+		@media (max-width:500px){
+			font-size: 1.5rem;
+			text-align: center;
+		}
+
+	}
+	 p {
+		font-size: @psize;
+	 }
+	 button {
+		background: @color;
+		font-size: @psize;
+		border:black 2px solid;
+		color:white;
+		margin-top: 2%;
+	}
+   
+ 
+}
+
+.navigator1 {
+display:flex;
+font-size: @psize;
+width: 100%;
+justify-content: flex-end;
+.backgroundbox();
+@media(max-width:500px){
+	justify-content: space-between;
+	text-align:center;
+
+}
+
+
+  a{ 
+  .backgroundcolor();
+  text-decoration: none;
+  text-align: center;
+  margin-left:10%;
+  @media (max-width:500px){
+	  margin: 0 1%;
+  }
+  }
+}
+
+.parent1{
+	display:flex;
+	justify-content: space-between;
+	@media (max-width: 500px){
+		display:block;
+		align-content: space-between;
+	}
+
+  .intro{
+	  width:46%;
+	  @media(max-width:500px){
+		  width:100%;
+		  margin: 1% 0;
+	  }
+.backgroundcolor();
+
+	  h2{
+		font-size:2rem;
+		font-weight:bold;
+		}
+
+	  p{
+		  font-size: @psize;
+		  margin-top:1%;
+		  
+	  }
+	}
+	.skills{
+		width: 46%;
+		@media(max-width:500px){
+			width:100%;
+			margin: 1% 0;
+		}
+	
+		h2{
+			font-size: 2rem;
+			font-weight: bold;
+		}
+		ul{
+			margin-top:1%;
+		}
+		li{
+			font-size:@psize;
+			border:1px solid black;
+			padding: 1%;
+
+		}
+	}
+
+}
+
+
+
+.table{
+
+	table {
+		width:100%;
+	}
+	
+	h2{
+	font-size:2rem;
+	font-weight:bold;
+	margin:2% 0;
+	}
+	tr{
+		font-size: @psize;
+	}
+	td{
+		border:black solid 1px;
+		padding:1%;
+	}
+	th{
+		font-weight: bold;
+		padding:1%;
+		border-top: black solid 1px;
+		border-right: black solid 1px;
+		border-left: black solid 1px;
+	}
+
+	
+
+}
+.contact{
+	h2{
+		margin-top: 3%;
+		font-size: 2rem;
+		font-weight: bold;
+		color:black;
+		
+	}
+
+	p{
+	font-size: @psize;
+	color:black;
+	.backgroundbox();
+}
+
+}
+
+footer{
+	text-align: center;
+	font-size: 1.3rem;
+	background: @color;
+	padding: 2%;
+	color: white;
+	margin-top: 2%;
+}
